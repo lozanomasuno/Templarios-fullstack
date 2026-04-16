@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "Admin123*",
+      "role": "ROLE_ADMIN",
+      "fullName": "Administrador Principal"
+    },
+    {
+      "id": 2,
+      "username": "operario1",
+      "password": "Oper123*",
+      "role": "ROLE_OPERATOR",
+      "fullName": "Operario García"
+    },
+    {
+      "id": 3,
+      "username": "operario2",
+      "password": "Oper123*",
+      "role": "ROLE_OPERATOR",
+      "fullName": "Operario López"
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "title": "Inspección inicial",
+      "description": "Revisión de equipos en sala A",
+      "status": "DONE",
+      "ownerUsername": "operario1",
+      "createdAt": "2026-04-14T08:00:00",
+      "updatedAt": "2026-04-15T10:00:00"
+    },
+    {
+      "id": 2,
+      "title": "Mantenimiento preventivo",
+      "description": "Cambio de filtros en unidad B",
+      "status": "IN_PROGRESS",
+      "ownerUsername": "operario1",
+      "createdAt": "2026-04-15T09:30:00",
+      "updatedAt": "2026-04-16T11:00:00"
+    },
+    {
+      "id": 3,
+      "title": "Reporte de incidencia",
+      "description": "Falla en sensor 3",
+      "status": "PENDING",
+      "ownerUsername": "operario2",
+      "createdAt": "2026-04-16T07:00:00",
+      "updatedAt": "2026-04-16T07:00:00"
+    }
+  ],
+  "permissions": [
+    { "role": "ROLE_ADMIN",    "resources": ["users", "records"] },
+    { "role": "ROLE_OPERATOR", "resources": ["records:own"] }
+  ]
+}
