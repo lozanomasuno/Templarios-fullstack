@@ -1,0 +1,10 @@
+{
+  "name": "templarios-mock",
+  "version": "1.0.0",
+  "scripts": {
+    "mock": "json-server --watch db.json --port 3000 --delay 300"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

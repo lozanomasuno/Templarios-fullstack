@@ -1,0 +1,10 @@
+// Same layout as admin sidebar but with operator accent color
+@use '../../admin/admin-dashboard/admin-dashboard.component.scss' as *;
+
+.sidebar.operator .brand {
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar.operator nav a.active {
+  border-left-color: #27ae60;
+}
