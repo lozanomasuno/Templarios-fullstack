@@ -29,7 +29,7 @@ public class DataSeeder {
 
     @PostConstruct
     public void seed() {
-        userRepository.save(new AppUser(1L, "admin", passwordEncoder.encode("admin*"), Role.ROLE_ADMIN));
+        userRepository.save(new AppUser(1L, "admin", passwordEncoder.encode("Admin123*"), Role.ROLE_ADMIN));
         userRepository.save(new AppUser(2L, "operario1", passwordEncoder.encode("Oper123*"), Role.ROLE_OPERATOR));
         userRepository.save(new AppUser(3L, "operario2", passwordEncoder.encode("Oper123*"), Role.ROLE_OPERATOR));
 
