@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: templarios-backend
+
+app:
+  jwt:
+    secret: dGVtcGxhcmlvcy1qd3Qtc2VjcmV0LTIwMjYtZGV2LWtleS1zZWd1cmEtMzIteC1jaGFycw==
+    expiration-ms: 3600000
+
+# Preparado para futura integracion con DB:
+# spring:
+#   datasource:
+#     url: jdbc:postgresql://localhost:5432/templarios
+#     username: user
+#     password: pass
+#   jpa:
+#     hibernate:
+#       ddl-auto: update
+#     show-sql: true
